@@ -1,0 +1,41 @@
+{
+  "name": "trade-bot-backend",
+  "version": "1.0.0",
+  "description": "TradeBot website backend",
+  "main": "server.js",
+  "engines": {
+    "node": "12.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sequelize db:migrate && node server.js",
+    "debug": "sequelize db:migrate && node --inspect server.js"
+  },
+  "keywords": [],
+  "author": "Aleksandr Bondarenko <schweppes1337@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "bcrypt": "^3.0.8",
+    "compression": "^1.7.4",
+    "connect-pg-simple": "^6.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.4.0",
+    "helmet": "^3.21.3",
+    "md5": "^2.2.1",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^4.4.2"
+  }
+}
